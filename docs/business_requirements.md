@@ -1,13 +1,13 @@
 # Business Requirements
 
-We provide a user friendly UI to content generation
+We provide a user-friendly UI to AI-aided assistance
 
 # Actors
 
-* ChatGPT v4
-  * The source of writers
-* Writer
-  * Provided writer by ChatGPT v4
+* OpenAI
+  * The source of assistants
+* Assistant
+  * Provided assistant by OpenAI
 * Client
   * User, who purchased a billing plan
 * Visitor
@@ -15,12 +15,13 @@ We provide a user friendly UI to content generation
 
 # Use Cases
 
-* ChatGPT v4
-  * Provide a writer
-* Writer
-  * Generate content based on a request
+* OpenAI
+  * Provide an assistant
+* Assistant
+  * Write a response based on a request
 * Client
-  * Choose a writer
+  * Choose an assistant
+  * Write to an assistant
   * Invite new user to get a discount
   * Change a billing plan
 * Visitor
