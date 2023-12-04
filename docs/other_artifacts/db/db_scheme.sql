@@ -1,14 +1,14 @@
 CREATE TYPE "billing_plan_enum" AS ENUM (
-  'beginner',
-  'starter',
-  'advanced'
+  'basic',
+  'standard',
+  'premium'
 );
 
 CREATE TABLE "users" (
   "login" varchar PRIMARY KEY,
   "password" varchar,
   "billing_plan" billing_plan_enum,
-  "referer" varchar
+  "invited_by" varchar
 );
 
 CREATE TABLE "assistants" (
@@ -28,7 +28,8 @@ CREATE TABLE "messages" (
   "to" varchar,
   "from" varchar,
   "content" varchar,
-  "attachment_id" integer
+  "attachment_id" integer,
+  "created_at" time
 );
 
 ALTER TABLE "chats" ADD FOREIGN KEY ("user_login") REFERENCES "users" ("login");
@@ -36,3 +37,5 @@ ALTER TABLE "chats" ADD FOREIGN KEY ("user_login") REFERENCES "users" ("login");
 ALTER TABLE "chats" ADD FOREIGN KEY ("assistant_name") REFERENCES "assistants" ("name");
 
 ALTER TABLE "messages" ADD FOREIGN KEY ("chat_id") REFERENCES "chats" ("id");
+
+ALTER TABLE "users" ADD FOREIGN KEY ("invited_by") REFERENCES "users" ("login");

@@ -1,0 +1,3 @@
+-- Get all the users, that registered via a referral link of a particular user
+-- Get all the messages for a chat
+-- Get all the chats

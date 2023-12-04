@@ -1,6 +1,6 @@
 # Business Requirements
 
-We provide a user-friendly UI to AI-aided assistance
+We provide a user-friendly UI to an AI-aided assistance
 
 # Actors
 
@@ -25,7 +25,9 @@ We provide a user-friendly UI to AI-aided assistance
   * Invite new user to get a discount
   * Change a billing plan
 * Visitor
+  * Register
   * Choose a billing plan
 
 The diagram of use cases can be viewed below:
+
 ![use_cases_diagram](./figs/use_cases.png)
