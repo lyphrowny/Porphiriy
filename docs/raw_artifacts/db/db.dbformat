@@ -1,0 +1,39 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Enum billing_plan_enum {
+  beginner
+  starter
+  advanced
+}
+
+Table users {
+  login varchar [pk]
+  password varchar
+  billing_plan billing_plan_enum
+  referer varchar
+}
+
+Table assistants {
+  name varchar [pk]
+  description varchar
+}
+
+Table chats {
+  id integer [pk]
+  user_login varchar
+  assistant_name varchar
+}
+
+Table messages {
+  id integer [pk]
+  chat_id integer
+  to varchar
+  from varchar
+  content varchar
+  attachment_id integer
+}
+
+Ref: users.login < chats.user_login
+Ref: assistants.name  < chats.assistant_name
+Ref: messages.chat_id > chats.id
