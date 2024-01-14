@@ -20,7 +20,6 @@ We provide a user-friendly UI to an AI-aided assistance
 * OpenAI
   * Provide an assistant
 * Payment service
-  * Process payment
   * Confirm payment
 * Assistant
   * Write a response based on a request
