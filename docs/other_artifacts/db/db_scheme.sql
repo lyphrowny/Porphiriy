@@ -1,6 +1,6 @@
 CREATE TABLE "users" (
   "id" bigserial PRIMARY KEY,
-  "login" varchar,
+  "login" varchar UNIQUE,
   "password" varchar,
   "billing_plan_name" varchar,
   "referer_id" integer,
@@ -23,8 +23,8 @@ CREATE TABLE "chats" (
 CREATE TABLE "messages" (
   "id" bigserial PRIMARY KEY,
   "chat_id" integer,
-  "to" integer,
   "from" integer,
+  "is_assistant" boolean,
   "content" varchar,
   "attachment_id" integer,
   "created_at" timestamp
