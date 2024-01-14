@@ -1,0 +1,22 @@
+-- insert assistants
+INSERT INTO assistants (name, description) VALUES 
+    ('First', 'First assistant'),
+    ('Second', 'Second assistant'),
+    ('Third', 'Third assistant'),
+    ('Fourth', 'Fourth assistant'),
+    ('Fifth', 'Fifth assistant'),
+    ('Sixth', 'Sixth assistant'),
+    ('Seventh', 'Seventh assistant'),
+    ('Eighth', 'Eighth assistant'),
+    ('Ninth', 'Ninth assistant'),
+    ('Tenth', 'Tenth assistant'),
+    ('Eleventh', 'Eleventh assistant'),
+    ('Twelfth', 'Twelfth assistant'),
+    ('Thirteenth', 'Thirteenth assistant'),
+    ('Fourteenth', 'Fourteenth assistant'),
+    ('Fifteenth', 'Fifteenth assistant'),
+    ('Sixteenth', 'Sixteenth assistant'),
+    ('Seventeenth', 'Seventeenth assistant'),
+    ('Eighteenth', 'Eighteenth assistant'),
+    ('Nineteenth', 'Nineteenth assistant'),
+    ('Twentieth', 'Twentieth assistant');
