@@ -1,5 +1,13 @@
 # UI
 
+## Register
+
+![sign_up](./figs/ui_registration.png)
+
+## Choose billing plan
+
+![choose_billing_plan](./figs/ui_choose_billing_plan.png)
+
 ## Choose chat
 
 ![choose_chat](./figs/choose_chat.png)
@@ -8,6 +16,3 @@
 
 ![chatting](./figs/chatting.png)
 
-## Invite friends
-
-![invite_friends](./figs/refferal.png)

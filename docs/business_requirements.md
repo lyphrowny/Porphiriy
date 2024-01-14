@@ -6,6 +6,8 @@ We provide a user-friendly UI to an AI-aided assistance
 
 * OpenAI
   * The source of assistants
+* Payment service
+  * External service to process payment
 * Assistant
   * Provided assistant by OpenAI
 * Client
@@ -17,6 +19,9 @@ We provide a user-friendly UI to an AI-aided assistance
 
 * OpenAI
   * Provide an assistant
+* Payment service
+  * Process payment
+  * Confirm payment
 * Assistant
   * Write a response based on a request
 * Client
